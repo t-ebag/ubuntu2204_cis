@@ -92,10 +92,12 @@ ubuntu2204cis_rule_2_1_8: true
 ubuntu2204cis_rule_2_1_9: true
 ubuntu2204cis_rule_2_1_10: true
 ubuntu2204cis_rule_2_1_11: true
-ubuntu2204cis_rule_2_2_1_1: true
-ubuntu2204cis_rule_2_2_1_2: true
-ubuntu2204cis_rule_2_2_1_3: true
-ubuntu2204cis_rule_2_2_1_4: true
+# REMOVED ALL TIME STUFF
+ubuntu2204cis_rule_2_2_1_1: false
+ubuntu2204cis_rule_2_2_1_2: false
+ubuntu2204cis_rule_2_2_1_3: false
+ubuntu2204cis_rule_2_2_1_4: false
+#####
 ubuntu2204cis_rule_2_2_2: true
 ubuntu2204cis_rule_2_2_3: true
 ubuntu2204cis_rule_2_2_4: true
@@ -341,7 +343,7 @@ ubuntu2204cis_aide_cron:
 ubuntu2204cis_gui: false
 
 # Set to 'true' if X Windows is needed in your environment
-ubuntu2204cis_xwindows_required: false
+ubuntu2204cis_xwindows_required: true
 
 ubuntu2204cis_openldap_clients_required: false
 ubuntu2204cis_telnet_required: false
@@ -368,8 +370,8 @@ ubuntu2204cis_time_synchronization_servers:
 ubuntu2204cis_setup_tcp_wrappers: false
 
 # ubuntu2204cis_firewall: firewalld
-ubuntu2204cis_firewall: iptables
-# ubuntu2204cis_firewall: ufw
+# ubuntu2204cis_firewall: iptables
+ubuntu2204cis_firewall: ufw
 # ubuntu2204cis_firewall: nftables
 
 # 3.5.3.2 | PATCH | Ensure a table exists"
@@ -423,8 +425,8 @@ ubuntu2204cis_pwquality:
     value: '-1'
 
 ubuntu2204cis_pass:
-  max_days: 365
-  min_days: 1
+  max_days: 30
+  min_days: 7
   warn_age: 7
   inactive: 30
   history: 5
