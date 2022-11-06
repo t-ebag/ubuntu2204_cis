@@ -425,8 +425,8 @@ ubuntu2204cis_pwquality:
     value: '-1'
 
 ubuntu2204cis_pass:
-  max_days: 30
-  min_days: 7
+  max_days: 90
+  min_days: 10
   warn_age: 7
   inactive: 30
   history: 5
