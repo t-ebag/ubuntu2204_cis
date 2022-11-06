@@ -304,14 +304,14 @@ ubuntu2204cis_squid_server: false
 ubuntu2204cis_smb_server: false
 ubuntu2204cis_dovecot_server: false
 ubuntu2204cis_httpd_server: false
-ubuntu2204cis_vsftpd_server: false
+ubuntu2204cis_vsftpd_server: true
 ubuntu2204cis_named_server: false
 ubuntu2204cis_nfs_rpc_server: false
 ubuntu2204cis_is_mail_server: false
 ubuntu2204cis_allow_autofs: false
 
 # xinetd required
-ubuntu2204cis_xinetd_required: false
+ubuntu2204cis_xinetd_required: true
 
 # RedHat Satellite Subscription items
 ubuntu2204cis_rhnsd_required: false
